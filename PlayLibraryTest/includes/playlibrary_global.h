@@ -1,0 +1,12 @@
+﻿#ifndef PLAYLIBRARY_GLOBAL_H
+#define PLAYLIBRARY_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(PLAYLIBRARY_LIBRARY)
+#  define CPLAYLIBRARYSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define CPLAYLIBRARYSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // PLAYLIBRARY_GLOBAL_H
